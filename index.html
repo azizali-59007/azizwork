@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aziz Ahmad | Frontend Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+</head>
+
+<body class="bg-white text-black dark:bg-zinc-950 dark:text-white transition-all duration-300">
+
+<!-- Navbar -->
+<nav class="flex justify-between items-center px-6 py-4 shadow-md sticky top-0 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md z-50">
+  <h1 class="text-2xl font-bold">Aziz Ahmad</h1>
+
+  <div class="flex gap-6 items-center">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+
+    <button onclick="toggleTheme()" class="p-2 rounded-full bg-zinc-200 dark:bg-zinc-800">
+      🌙
+    </button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="text-center py-24 px-6">
+  <h2 class="text-5xl font-bold mb-4">Frontend Developer</h2>
+
+  <p class="text-lg text-zinc-600 dark:text-zinc-400 max-w-xl mx-auto">
+    Passionate developer building modern websites using HTML, CSS, JavaScript and React.
+  </p>
+
+  <div class="mt-8 flex justify-center gap-4 flex-wrap">
+    <a href="#projects" class="px-6 py-3 rounded-xl bg-black text-white dark:bg-white dark:text-black">
+      View Projects
+    </a>
+
+    <a href="mailto:azizhereoo7@gmail.com" class="px-6 py-3 rounded-xl border border-zinc-400">
+      Contact Me
+    </a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="px-6 py-16 max-w-4xl mx-auto">
+  <h3 class="text-3xl font-bold mb-4">About Me</h3>
+
+  <p class="text-zinc-600 dark:text-zinc-400 leading-8">
+    I am Aziz Ahmad, a passionate Frontend Developer who loves building modern,
+    responsive and user-friendly websites. I enjoy learning new technologies
+    and improving my coding skills every day.
+  </p>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="px-6 py-16 max-w-4xl mx-auto">
+  <h3 class="text-3xl font-bold mb-8">Skills</h3>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="p-4 rounded-xl bg-zinc-100 dark:bg-zinc-900 text-center">HTML</div>
+    <div class="p-4 rounded-xl bg-zinc-100 dark:bg-zinc-900 text-center">CSS</div>
+    <div class="p-4 rounded-xl bg-zinc-100 dark:bg-zinc-900 text-center">JavaScript</div>
+    <div class="p-4 rounded-xl bg-zinc-100 dark:bg-zinc-900 text-center">React</div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="px-6 py-16 max-w-5xl mx-auto">
+  <h3 class="text-3xl font-bold mb-8">Projects</h3>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="p-6 rounded-2xl bg-zinc-100 dark:bg-zinc-900 hover:scale-105 transition">
+      <h4 class="text-xl font-semibold mb-2">Weather App</h4>
+      <p class="text-zinc-600 dark:text-zinc-400">Modern weather app using API.</p>
+    </div>
+
+    <div class="p-6 rounded-2xl bg-zinc-100 dark:bg-zinc-900 hover:scale-105 transition">
+      <h4 class="text-xl font-semibold mb-2">Portfolio Website</h4>
+      <p class="text-zinc-600 dark:text-zinc-400">Responsive personal portfolio website.</p>
+    </div>
+
+    <div class="p-6 rounded-2xl bg-zinc-100 dark:bg-zinc-900 hover:scale-105 transition">
+      <h4 class="text-xl font-semibold mb-2">To-do App</h4>
+      <p class="text-zinc-600 dark:text-zinc-400">Task management application.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="px-6 py-16 max-w-4xl mx-auto text-center">
+  <h3 class="text-3xl font-bold mb-4">Contact Me</h3>
+
+  <p class="text-zinc-600 dark:text-zinc-400 mb-8">
+    Let’s work together or discuss opportunities.
+  </p>
+
+  <div class="flex justify-center gap-4 flex-wrap">
+    <a href="mailto:azizhereoo7@gmail.com" class="px-5 py-3 rounded-xl bg-zinc-200 dark:bg-zinc-800">
+      Email
+    </a>
+
+    <a href="https://www.linkedin.com/in/aziz-ahmad-3252832b2" target="_blank"
+       class="px-5 py-3 rounded-xl bg-zinc-200 dark:bg-zinc-800">
+      LinkedIn
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-8 text-zinc-500">
+  © 2026 Aziz Ahmad. All rights reserved.
+</footer>
+
+<script>
+function toggleTheme() {
+  document.documentElement.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
